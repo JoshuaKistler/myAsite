@@ -257,7 +257,7 @@ More comprehensive version at shenanigans.shoghisimon.ca/collection/css-rain-bg/
   margin: 50px auto; /* Center the window and add margin for spacing */
   z-index: 3;
   right: -220px;
-  top: -470px;
+  top: -710px;
 }
 
 .window-title {
@@ -454,10 +454,10 @@ More comprehensive version at shenanigans.shoghisimon.ca/collection/css-rain-bg/
   margin-top: 1.5em;
 }
 
-.widgetnew {
+.widgetskills {
   width: 100%;
-  max-width: 350px;
-  height: 300px;
+  max-width: 300px;
+  height: 500px;
   background: rgba(0, 0, 0, 0.3); /* 90% transparency */
   border: 2px solid #06DB02; /* Border color */
   border-radius: 50px; /* Rounded corners */
@@ -470,6 +470,56 @@ More comprehensive version at shenanigans.shoghisimon.ca/collection/css-rain-bg/
   right: -220px;
 }
 
+.widgetskills-content {
+  position: relative;
+  z-index: 5; /* Above overlays */
+  color: white;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  top: 100px;
+}
 
+.widgetskills-content h4 {
+  font-family: 'Graduate', cursive; /* Font for the title */
+  font-size: 40px;
+  color: #06DB02;
+  top: -150px;
+  position: relative;
+}
 
-/* Overlay to darken widget content */
+/* Widget Container */
+.widget-small {
+  width: auto; /* Adjust the width to fit the text */
+  padding: 5px 10px; /* Add padding for better spacing */
+  background: #3d913c; /* Inner color */
+  border: 2px solid #06db02; /* Border color */
+  border-radius: 15px; /* Curved border */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+  margin: 5px; /* Add margin for spacing */
+}
+
+/* Hover Effect */
+.widget-small:hover {
+  background: #06db02; /* Change inner color on hover */
+}
+
+/* Text Inside Widget */
+.widget-small-text {
+  font-size: 14px; /* Adjust font size to fit more widgets */
+  font-family: 'Graduate', cursive; /* Font style */
+  color: black; /* Text color */
+  white-space: nowrap; /* Prevent text from wrapping */
+}
+
+/* Container for all skill widgets */
+.skills-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow widgets to wrap to the next line */
+  justify-content: center; /* Center the widgets */
+  align-items: center;
+  margin-top: -200px; /* Add margin to ensure content exceeds viewport height */
+  padding: 10px; /* Add padding inside the container */
+}
