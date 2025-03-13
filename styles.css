@@ -182,7 +182,7 @@ More comprehensive version at shenanigans.shoghisimon.ca/collection/css-rain-bg/
 .widget {
   width: 100%;
   max-width: 850px;
-  height: 800px;
+  height: 1500px;
   background: rgba(0, 0, 0, 0.9); /* 90% transparency */
   border: 2px solid #06DB02; /* Border color */
   border-radius: 50px; /* Rounded corners */
@@ -247,7 +247,7 @@ More comprehensive version at shenanigans.shoghisimon.ca/collection/css-rain-bg/
 }
 
 .window {
-  position: static;
+  position: relative;
   height: 165px;
   width: 260px;
   background-color: #fff;
@@ -256,7 +256,8 @@ More comprehensive version at shenanigans.shoghisimon.ca/collection/css-rain-bg/
   overflow: hidden;
   margin: 50px auto; /* Center the window and add margin for spacing */
   z-index: 3;
-  margin-right: 20px;
+  right: -220px;
+  top: -470px;
 }
 
 .window-title {
@@ -393,6 +394,9 @@ More comprehensive version at shenanigans.shoghisimon.ca/collection/css-rain-bg/
   position: relative;
   overflow: hidden;
   box-sizing: border-box;
+  z-index: 4;
+  left: 565px;
+  top: 700px;
 }
 
 .terminal-header {
@@ -449,3 +453,23 @@ More comprehensive version at shenanigans.shoghisimon.ca/collection/css-rain-bg/
     blinkCursor 0.5s step-end infinite alternate;
   margin-top: 1.5em;
 }
+
+.widgetnew {
+  width: 100%;
+  max-width: 350px;
+  height: 300px;
+  background: rgba(0, 0, 0, 0.3); /* 90% transparency */
+  border: 2px solid #06DB02; /* Border color */
+  border-radius: 50px; /* Rounded corners */
+  overflow: hidden;
+  box-shadow: 0 0 10px #06DB02; /* Optional glow effect */
+  margin: 50px auto; /* Center the widget and add margin for spacing */
+  position: relative; /* Ensure it is positioned relative to the body */
+  z-index: 5; /* Ensure it is above the background */
+  top: 100px;
+  right: -220px;
+}
+
+
+
+/* Overlay to darken widget content */
