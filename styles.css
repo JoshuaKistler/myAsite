@@ -257,7 +257,7 @@ More comprehensive version at shenanigans.shoghisimon.ca/collection/css-rain-bg/
   margin: 50px auto; /* Center the window and add margin for spacing */
   z-index: 3;
   right: -220px;
-  top: -710px;
+  top: -1225px;
 }
 
 .window-title {
@@ -395,8 +395,8 @@ More comprehensive version at shenanigans.shoghisimon.ca/collection/css-rain-bg/
   overflow: hidden;
   box-sizing: border-box;
   z-index: 4;
-  left: 565px;
-  top: 700px;
+  left: 535px;
+  top: 800px;
 }
 
 .terminal-header {
@@ -522,4 +522,55 @@ More comprehensive version at shenanigans.shoghisimon.ca/collection/css-rain-bg/
   align-items: center;
   margin-top: -200px; /* Add margin to ensure content exceeds viewport height */
   padding: 10px; /* Add padding inside the container */
+}
+
+.widgetprojekte {
+  width: 100%;
+  max-width: 370px;
+  height: 850px;
+  background: rgba(0, 0, 0, 0.9); /* 90% transparency */
+  border: 2px solid #06DB02; /* Border color */
+  border-radius: 50px; /* Rounded corners */
+  overflow: hidden;
+  box-shadow: 0 0 10px #06DB02; /* Optional glow effect */
+  margin: 50px auto; /* Center the widget and add margin for spacing */
+  position: relative; /* Ensure it is positioned relative to the body */
+  z-index: 2; /* Ensure it is above the background */
+  top: -650px;
+  left: -190px;
+}
+/* Hover Effect */
+.circle-widget:hover {
+  background: #06db02; /* Change inner color on hover */
+}
+.widget {
+  width: 100%;
+  max-width: 850px;
+  height: 1500px;
+  background: rgba(0, 0, 0, 0.9); /* 90% transparency */
+  border: 2px solid #06DB02; /* Border color */
+  border-radius: 50px; /* Rounded corners */
+  overflow: hidden;
+  box-shadow: 0 0 10px #06DB02; /* Optional glow effect */
+  margin: 50px auto; /* Center the widget and add margin for spacing */
+  position: relative; /* Ensure it is positioned relative to the body */
+  z-index: 2; /* Ensure it is above the background */
+}
+
+/* Circle Widget */
+.circle-widget {
+  width: 20px; /* Adjust the width as needed */
+  height: 20px; /* Adjust the height as needed */
+  background: #3d913c; /* Inner color */
+  border: 2px solid #06db02; /* Border color */
+  border-radius: 50%; /* Make it a circle */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+  margin: 10px; /* Add margin for spacing */
+}
+
+.circle-widget:hover {
+  background-color: #0b0lnf;
 }
