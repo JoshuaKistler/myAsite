@@ -257,7 +257,7 @@ More comprehensive version at shenanigans.shoghisimon.ca/collection/css-rain-bg/
   margin: 50px auto; /* Center the window and add margin for spacing */
   z-index: 3;
   right: -220px;
-  top: -1225px;
+  top: -1540px;
 }
 
 .window-title {
@@ -587,19 +587,29 @@ More comprehensive version at shenanigans.shoghisimon.ca/collection/css-rain-bg/
 }
 
 /* Line between circles */
+
+
+.flowchart-item {
+  position: relative; /* Ermöglicht absolute Positionierung der Linie */
+  margin-bottom: 0; /* Entfernt zusätzlichen Abstand zwischen den Items */
+}
+
 .flowchart-line {
-  width: 4px;
-  height: 100px; /* Adjust the height as needed */
-  background: #06db02; /* Line color */
-  margin: 0 auto; /* Center the line */
-  margin-left: 45px;
+  position: absolute; /* Positioniert die Linie unabhängig */
+  width: 4px; /* Breite der Linie */
+  height: 300px; /* Höhe der Linie, passe diesen Wert an */
+  background: #06db02; /* Farbe der Linie */
+  top: 230px; /* Startposition der Linie relativ zum ersten Kreis */
+  left: 47px; /* Zentriert die Linie horizontal */
+  transform: translateX(-50%); /* Korrigiert die Zentrierung */
+  z-index: -1; /* Stellt sicher, dass die Linie hinter den Kreisen liegt */
 }
 
 /* Widget Projekte */
 .widgetprojekte {
   width: 100%;
-  max-width: 370px;
-  height: 850px;
+  max-width: 350px;
+  height: 650px;
   background: rgba(0, 0, 0, 0.9); /* 90% transparency */
   border: 2px solid #06DB02; /* Border color */
   border-radius: 50px; /* Rounded corners */
@@ -648,21 +658,140 @@ More comprehensive version at shenanigans.shoghisimon.ca/collection/css-rain-bg/
 }
 
 /* Button */
-.flowchart-button {
-  background-color: #06db02;
-  border: none;
-  color: white;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 12px;
-  transition: background-color 0.3s ease;
+/* From Uiverse.io by tarantino421 */
+/* From Uiverse.io by tarantino421 */
+.box {
+  --clr-shadow__border: #A8DF8E;
+  --clr-text: #F6F4EB;
+  --clr-code-line: #43ff85;
+  --clr-matrix: #020204;
+  --size: 3rem;
+  position: relative;
+  outline: 1px solid var(--clr-shadow__border);
+  width: 200px;
 }
 
-.flowchart-button:hover {
-  background-color: #3d913c;
+.button {
+  font-weight: 600;
+  font-size: 1.3rem;
+  letter-spacing: 0.2rem;
+  color: var(--clr-text);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  height: 35px; /* Einheitliche Höhe */
+  width: 200px; /* Einheitliche Breite */
+  left: 600px;
+  text-shadow: 2px 0px var(--clr-shadow__border), 0px 2px var(--clr-shadow__border),
+    -2px 0px var(--clr-shadow__border), 0px -2px var(--clr-shadow__border);
+  display: flex; /* Flexbox aktivieren */
+  justify-content: center; /* Text horizontal zentrieren */
+  align-items: center; /* Text vertikal zentrieren */
+  box-sizing: border-box; /* Padding und Border in die Größe einbeziehen */
+  overflow: hidden; /* Verhindert, dass Inhalte überlaufen */
+}
+.matrix {
+  width: 100%;
+  height: 100%;
+  bottom: 0%;
+  transition: 0.5s ease-in-out;
+  z-index: -1;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: absolute;
+  background: var(--clr-matrix);
+}
+
+.box:hover .matrix {
+  opacity: 1;
+}
+
+.code-line {
+  position: relative;
+  display: flex;
+  flex-direction: column-reverse;
+  transition: 0.5s;
+  min-height: 0.6rem;
+  min-width: 0.6rem;
+  animation: matrix-animation calc(.2s * var(--i)) linear infinite;
+}
+
+.code {
+  text-shadow: 20px 100px var(--clr-code-line), -20px -50px var(--clr-code-line);
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: var(--clr-code-line);
+  opacity: 0.5;
+}
+
+.code:first-child {
+  color: var(--clr-text);
+  opacity: 1;
+}
+
+@keyframes matrix-animation {
+  0% {
+    transform: translateY(calc(-50% * var(--i)));
+  }
+
+  100% {
+    transform: translateY(calc(50% * var(--i)));
+  }
+}
+
+/* Widget Schultage */
+.widget-schultage {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  background: rgba(0, 0, 0, 0.9); /* 90% transparency */
+  border: 2px solid #06DB02; /* Border color */
+  border-radius: 50px; /* Rounded corners */
+  overflow: hidden;
+  box-shadow: 0 0 10px #06DB02; /* Optional glow effect */
+  margin: 50px auto; /* Center the widget and add margin for spacing */
+  position: relative; /* Ensure it is positioned relative to the body */
+  z-index: 2; /* Ensure it is above the background */
+  padding: 20px;
+  top: -635px;
+  left: -180px;
+  height: 90px;
+  width: 280px;
+}
+
+.widget-schultage-title {
+  font-family: 'Graduate', cursive; /* Font for the title */
+  font-size: 30px;
+  color: #06DB02;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.schultage-container {
+  display: flex;
+  justify-content: space-around; /* Space between the boxes */
+  align-items: center;
+}
+
+.schultage-box {
+  width: 90px;
+  height: 35px;
+  background: #3d913c; /* Inner color */
+  border: 2px solid #06DB02; /* Border color */
+  border-radius: 15px; /* Rounded corners */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Graduate', cursive; /* Font style */
+  font-size: 18px;
+  color: black;
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+  cursor: pointer;
+}
+
+.schultage-box:hover {
+  background: #06DB02; /* Change inner color on hover */
 }
