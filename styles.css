@@ -597,7 +597,7 @@ More comprehensive version at shenanigans.shoghisimon.ca/collection/css-rain-bg/
 .flowchart-line {
   position: absolute; /* Positioniert die Linie unabhängig */
   width: 4px; /* Breite der Linie */
-  height: 300px; /* Höhe der Linie, passe diesen Wert an */
+  height: 350px; /* Höhe der Linie, passe diesen Wert an */
   background: #06db02; /* Farbe der Linie */
   top: 230px; /* Startposition der Linie relativ zum ersten Kreis */
   left: 47px; /* Zentriert die Linie horizontal */
@@ -609,7 +609,7 @@ More comprehensive version at shenanigans.shoghisimon.ca/collection/css-rain-bg/
 .widgetprojekte {
   width: 100%;
   max-width: 350px;
-  height: 650px;
+  height: 700px;
   background: rgba(0, 0, 0, 0.9); /* 90% transparency */
   border: 2px solid #06DB02; /* Border color */
   border-radius: 50px; /* Rounded corners */
@@ -648,6 +648,7 @@ More comprehensive version at shenanigans.shoghisimon.ca/collection/css-rain-bg/
   font-size: 30px;
   color: #06DB02;
   margin-top: 20px;
+  text-align: left;
 }
 
 .flowchart-item-text {
@@ -655,6 +656,7 @@ More comprehensive version at shenanigans.shoghisimon.ca/collection/css-rain-bg/
   font-size: 19px;
   color: white;
   margin-bottom: 10px;
+  text-align: left;
 }
 
 /* Button */
@@ -756,7 +758,7 @@ More comprehensive version at shenanigans.shoghisimon.ca/collection/css-rain-bg/
   position: relative; /* Ensure it is positioned relative to the body */
   z-index: 2; /* Ensure it is above the background */
   padding: 20px;
-  top: -635px;
+  top: -665px;
   left: -180px;
   height: 90px;
   width: 280px;
@@ -794,4 +796,65 @@ More comprehensive version at shenanigans.shoghisimon.ca/collection/css-rain-bg/
 
 .schultage-box:hover {
   background: #06DB02; /* Change inner color on hover */
+}
+
+/* Widget Sprachkenntnisse */
+.widget-sprachkenntnisse {
+  width: 100%;
+  max-width: 700px;
+  height: 145px;
+  background: rgba(0, 0, 0, 0.9); /* 90% transparency */
+  border: 2px solid #06DB02; /* Border color */
+  border-radius: 50px; /* Rounded corners */
+  overflow: hidden;
+  box-shadow: 0 0 10px #06DB02; /* Optional glow effect */
+  margin: 50px auto; /* Center the widget and add margin for spacing */
+  position: relative; /* Ensure it is positioned relative to the body */
+  z-index: 2; /* Ensure it is above the background */
+  padding: 20px;
+  top:  -750px;
+  left: 0px;
+}
+
+.widget-sprachkenntnisse-title {
+  font-family: 'Graduate', cursive; /* Font for the title */
+  font-size: 30px;
+  color: #06DB02;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.sprachkenntnisse-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Space between the bars */
+}
+
+.sprachkenntnisse-item {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between label and bar */
+}
+
+.sprach-label {
+  font-family: 'Graduate', cursive;
+  font-size: 18px;
+  color: #06DB02;
+  width: 80px; /* Fixed width for labels */
+}
+
+.sprach-bar {
+  flex-grow: 1;
+  height: 25px;
+  background: #3d913c; /* Background color for the bar */
+  border: 2px solid #06DB02; /* Border color */
+  border-radius: 15px; /* Rounded corners */
+  overflow: hidden;
+  position: relative;
+}
+
+.sprach-bar-fill {
+  height: 100%;
+  background: #06DB02; /* Fill color */
+  transition: width 0.3s ease; /* Smooth transition for width changes */
 }
