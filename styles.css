@@ -182,7 +182,7 @@ More comprehensive version at shenanigans.shoghisimon.ca/collection/css-rain-bg/
 .widget {
   width: 100%;
   max-width: 850px;
-  height: 1500px;
+  height: 2000px;
   background: rgba(0, 0, 0, 0.9); /* 90% transparency */
   border: 2px solid #06DB02; /* Border color */
   border-radius: 50px; /* Rounded corners */
@@ -257,7 +257,7 @@ More comprehensive version at shenanigans.shoghisimon.ca/collection/css-rain-bg/
   margin: 50px auto; /* Center the window and add margin for spacing */
   z-index: 3;
   right: -220px;
-  top: -1540px;
+  top: -1900px;
 }
 
 .window-title {
@@ -747,7 +747,7 @@ More comprehensive version at shenanigans.shoghisimon.ca/collection/css-rain-bg/
 /* Widget Schultage */
 .widget-schultage {
   width: 100%;
-  max-width: 350px;
+  max-width: 1000px;
   height: auto;
   background: rgba(0, 0, 0, 0.9); /* 90% transparency */
   border: 2px solid #06DB02; /* Border color */
@@ -779,7 +779,7 @@ More comprehensive version at shenanigans.shoghisimon.ca/collection/css-rain-bg/
 }
 
 .schultage-box {
-  width: 90px;
+  width: 100px;
   height: 35px;
   background: #3d913c; /* Inner color */
   border: 2px solid #06DB02; /* Border color */
@@ -833,7 +833,7 @@ More comprehensive version at shenanigans.shoghisimon.ca/collection/css-rain-bg/
 .sprachkenntnisse-item {
   display: flex;
   align-items: center;
-  gap: 10px; /* Space between label and bar */
+  gap: 20px; /* Space between label and bar */
 }
 
 .sprach-label {
@@ -857,4 +857,96 @@ More comprehensive version at shenanigans.shoghisimon.ca/collection/css-rain-bg/
   height: 100%;
   background: #06DB02; /* Fill color */
   transition: width 0.3s ease; /* Smooth transition for width changes */
+}
+/* Widget Hobbys */
+.widget-hobbys {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  background: rgba(0, 0, 0, 0.9); /* 90% transparency */
+  border: 2px solid #06DB02; /* Border color */
+  border-radius: 50px; /* Rounded corners */
+  overflow: hidden;
+  box-shadow: 0 0 10px #06DB02; /* Optional glow effect */
+  margin: 50px auto; /* Center the widget and add margin for spacing */
+  position: relative; /* Ensure it is positioned relative to the body */
+  z-index: 2; /* Ensure it is above the background */
+  padding: 20px;
+  top: -760px;
+  left: -225px;
+}
+
+.widget-hobbys-title {
+  font-family: 'Graduate', cursive; /* Font for the title */
+  font-size: 30px;
+  color: #06DB02;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.hobbys-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Space between the hobby items */
+  align-items: center; /* Center the items horizontally */
+}
+
+.hobby-item {
+  font-family: 'Graduate', cursive;
+  font-size: 18px;
+  color: black;
+  background: #3d913c; /* Inner color */
+  border: 2px solid #06DB02; /* Border color */
+  border-radius: 15px; /* Rounded corners */
+  padding: 10px 20px; /* Padding inside the hobby item */
+  text-align: center;
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+  cursor: pointer;
+
+}
+
+.hobby-item:hover {
+  background: #06DB02; /* Change inner color on hover */
+  color: black; /* Optional: Change text color on hover */
+}
+
+/* Widget Bild */
+.widget-bild {
+  width: 100%;
+  max-width: 350px;
+  height:340px;
+  background: rgba(0, 0, 0, 0.9); /* 90% transparency */
+  border: 2px solid #06DB02; /* Border color */
+  border-radius: 50px; /* Rounded corners */
+  overflow: hidden;
+  box-shadow: 0 0 10px #06DB02; /* Optional glow effect */
+  margin: 50px auto; /* Center the widget and add margin for spacing */
+  position: relative; /* Ensure it is positioned relative to the body */
+  z-index: 2; /* Ensure it is above the background */
+  padding: 20px;
+  top: -1190px;
+  left: 170px;
+}
+
+.widget-bild-title {
+  font-family: 'Graduate', cursive; /* Font for the title */
+  font-size: 30px;
+  color: #06DB02;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.bild-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bild {
+  width: 100%;
+  max-width: 200px; /* Adjust the size of the image */
+  height: auto;
+  border-radius: 50%; /* Make the image circular */
+  border: 2px solid #06DB02; /* Border around the image */
+  box-shadow: 0 0 10px #06DB02; /* Optional glow effect */
 }
