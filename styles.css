@@ -182,7 +182,7 @@ More comprehensive version at shenanigans.shoghisimon.ca/collection/css-rain-bg/
 .widget {
   width: 100%;
   max-width: 850px;
-  height: 2000px;
+  height: 1900px;
   background: rgba(0, 0, 0, 0.9); /* 90% transparency */
   border: 2px solid #06DB02; /* Border color */
   border-radius: 50px; /* Rounded corners */
@@ -257,7 +257,7 @@ More comprehensive version at shenanigans.shoghisimon.ca/collection/css-rain-bg/
   margin: 50px auto; /* Center the window and add margin for spacing */
   z-index: 3;
   right: -220px;
-  top: -1900px;
+  top: -2765px;
 }
 
 .window-title {
@@ -746,8 +746,7 @@ More comprehensive version at shenanigans.shoghisimon.ca/collection/css-rain-bg/
 
 /* Widget Schultage */
 .widget-schultage {
-  width: 100%;
-  max-width: 1000px;
+  width: 314px;
   height: auto;
   background: rgba(0, 0, 0, 0.9); /* 90% transparency */
   border: 2px solid #06DB02; /* Border color */
@@ -761,7 +760,6 @@ More comprehensive version at shenanigans.shoghisimon.ca/collection/css-rain-bg/
   top: -665px;
   left: -180px;
   height: 90px;
-  width: 280px;
 }
 
 .widget-schultage-title {
@@ -801,7 +799,7 @@ More comprehensive version at shenanigans.shoghisimon.ca/collection/css-rain-bg/
 /* Widget Sprachkenntnisse */
 .widget-sprachkenntnisse {
   width: 100%;
-  max-width: 700px;
+  max-width: 680px;
   height: 145px;
   background: rgba(0, 0, 0, 0.9); /* 90% transparency */
   border: 2px solid #06DB02; /* Border color */
@@ -861,7 +859,7 @@ More comprehensive version at shenanigans.shoghisimon.ca/collection/css-rain-bg/
 /* Widget Hobbys */
 .widget-hobbys {
   width: 100%;
-  max-width: 250px;
+  max-width: 245px;
   height: auto;
   background: rgba(0, 0, 0, 0.9); /* 90% transparency */
   border: 2px solid #06DB02; /* Border color */
@@ -949,4 +947,35 @@ More comprehensive version at shenanigans.shoghisimon.ca/collection/css-rain-bg/
   border-radius: 50%; /* Make the image circular */
   border: 2px solid #06DB02; /* Border around the image */
   box-shadow: 0 0 10px #06DB02; /* Optional glow effect */
+}
+
+/* Sticky Widget */
+.sticky-widget {
+  position: fixed; /* Fixiert das Widget an einer Position */
+  top: 20px; /* Abstand vom oberen Rand */
+  right: 20px; /* Abstand vom rechten Rand */
+  display: flex;
+  flex-direction: column; /* Icons untereinander anordnen */
+  gap: 15px; /* Abstand zwischen den Icons */
+  background: rgba(0, 0, 0, 0.9); /* Hintergrundfarbe mit Transparenz */
+  border: 2px solid #06DB02; /* Rahmenfarbe */
+  border-radius: 15px; /* Abgerundete Ecken */
+  padding: 10px;
+  box-shadow: 0 0 10px #06DB02; /* Optionaler Leuchteffekt */
+  z-index: 1000; /* Sicherstellen, dass es über anderen Elementen liegt */
+  right: 250px;
+  top: 50px;
+  height: 100px;
+}
+
+.sticky-icon img {
+  width: 40px; /* Größe der Icons */
+  height: 40px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animation für Hover-Effekt */
+}
+
+.sticky-icon img:hover {
+  transform: scale(1.1); /* Vergrößert das Icon beim Hover */
+  box-shadow: 0 0 10px #06DB02; /* Leuchteffekt beim Hover */
 }
