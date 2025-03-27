@@ -979,3 +979,44 @@ More comprehensive version at shenanigans.shoghisimon.ca/collection/css-rain-bg/
   transform: scale(1.1); /* Vergrößert das Icon beim Hover */
   box-shadow: 0 0 10px #06DB02; /* Leuchteffekt beim Hover */
 }
+/* Kleinere Titelgröße für das Widget */
+.widget-title {
+  font-family: 'Graduate', cursive;
+  font-size: 20px; /* Kleinere Schriftgröße */
+  color: #06DB02;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Entfernt die Punkte aus der Aufzählung */
+.skills-list {
+  font-family: 'Merriweather', serif;
+  font-size: 18px;
+  color: #06DB02;
+  line-height: 1.6;
+}
+
+.widget-rueckblick-ux {
+  max-height: 650px !important; /* Begrenze die maximale Höhe */
+  overflow-y: auto !important; /* Ermöglicht Scrollen, falls der Inhalt zu groß ist */
+  padding: 20px !important; /* Behalte das Padding */
+  margin: 50px auto !important; /* Zentriere das Widget */
+}
+.box a {
+  text-decoration: none; /* Entfernt die Unterstreichung */
+  color: inherit; /* Beibehaltung der Textfarbe des Buttons */
+  display: inline-block; /* Stellt sicher, dass der Link wie ein Block behandelt wird */
+}
+.widget-rueckblick-devops {
+  max-height: 720px !important; /* Begrenze die maximale Höhe */
+  overflow-y: auto !important; /* Ermöglicht Scrollen, falls der Inhalt zu groß ist */
+  padding: 20px !important; /* Behalte das Padding */
+  margin: 50px auto !important; /* Zentriere das Widget */
+}
+
+.widget-rueckblick-automationsteam {
+  max-height: 710px !important; /* Begrenze die maximale Höhe */
+  overflow-y: auto !important; /* Ermöglicht Scrollen, falls der Inhalt zu groß ist */
+  padding: 20px !important; /* Behalte das Padding */
+  margin: 50px auto !important; /* Zentriere das Widget */
+}
