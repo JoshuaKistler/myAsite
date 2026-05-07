@@ -257,7 +257,7 @@ More comprehensive version at shenanigans.shoghisimon.ca/collection/css-rain-bg/
   margin: 50px auto; /* Center the window and add margin for spacing */
   z-index: 3;
   right: -220px;
-  top: -2765px;
+  top: -3000px;
 }
 
 .window-title {
@@ -597,19 +597,19 @@ More comprehensive version at shenanigans.shoghisimon.ca/collection/css-rain-bg/
 .flowchart-line {
   position: absolute; /* Positioniert die Linie unabhängig */
   width: 4px; /* Breite der Linie */
-  height: 350px; /* Höhe der Linie, passe diesen Wert an */
+  height: 550px; /* Höhe der Linie, passe diesen Wert an */
   background: #06db02; /* Farbe der Linie */
   top: 230px; /* Startposition der Linie relativ zum ersten Kreis */
   left: 47px; /* Zentriert die Linie horizontal */
   transform: translateX(-50%); /* Korrigiert die Zentrierung */
-  z-index: -1; /* Stellt sicher, dass die Linie hinter den Kreisen liegt */
+  z-index: 1; /* Stellt sicher, dass die Linie hinter den Kreisen liegt */
 }
 
 /* Widget Projekte */
 .widgetprojekte {
   width: 100%;
   max-width: 350px;
-  height: 700px;
+  height: 950px;
   background: rgba(0, 0, 0, 0.9); /* 90% transparency */
   border: 2px solid #06DB02; /* Border color */
   border-radius: 50px; /* Rounded corners */
